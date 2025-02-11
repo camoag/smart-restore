@@ -1,0 +1,46 @@
+[project]
+version = "0.5.0"
+name = "smart_restore"
+
+authors = [
+  { name="Mike Parent", email="michael.parent@camo.ag" },
+]
+description = "Fast, surgical database restores"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[project.urls]
+"Repository" = "https://github.com/camoag/smart_restore"
+
+[tool.poetry]
+name = "smart_restore"
+description = "Fast, surgical database restores"
+version = "0.5.0"
+authors = ["Mike Parent <michael.parent@camo.ag>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+alembic = "^1.13.2"
+click = "^8.1.7"
+click-config-file = "^0.6.0"
+psycopg2-binary = "^2.9.9"
+sqlalchemy = "^2.0.32"
+sqlalchemy_utils = "^0.41.2"
+tqdm = "^4.66.5"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.10.0"
+pytest = "^8.2.2"
+black = "^24.4.2"
+
+[tool.poetry.scripts]
+smart_restore = "smart_restore:restore"
