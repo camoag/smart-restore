@@ -8,7 +8,7 @@ CLI tool to efficiently copy data between databases
 
 1. Install via PIP:
 ```
-$ pip install git+ssh://git@github.com/camoag/smart_restore.git@main
+$ pip install git+ssh://git@github.com/camoag/smart-restore.git@main
 ```
 
 2. Run the command (use `--help` for usage details):
