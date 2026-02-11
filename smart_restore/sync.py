@@ -73,7 +73,6 @@ def copy_row(
         # Copy these rows
         target.upsert_rows(table.name, chunk_rows)
 
-        breakpoint()
         # Fanout out to tables that depend on THESE rows
         for foreign_table, foreign_rows in foreign_key_table_rows:
             fanout_table_rows(
