@@ -113,7 +113,7 @@ def fanout_table_rows(
                     table_name=source_dependent_table.name,
                     where=or_(
                         *[
-                            and_(
+                            or_(
                                 *[
                                     source_dependent_table.columns[
                                         foreign_key.parent.name

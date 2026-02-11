@@ -1,5 +1,5 @@
 [project]
-version = "0.5.0"
+version = "0.5.1"
 name = "smart_restore"
 
 authors = [
@@ -24,7 +24,7 @@ build-backend = "poetry.core.masonry.api"
 [tool.poetry]
 name = "smart_restore"
 description = "Fast, surgical database restores"
-version = "0.5.0"
+version = "0.5.1"
 authors = ["Mike Parent <michael.parent@camo.ag>"]
 
 [tool.poetry.dependencies]
